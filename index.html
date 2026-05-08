@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack-Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Inter:ital,wght@0,400;0,500;0,600;1,500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="topbar container">
+        <nav class="navbar" aria-label="Main navigation">
+          <div class="nav-brand">
+            <img
+              src="./media/navbar-icon.svg"
+              alt="Hack-Nation logo"
+            />
+            <span>Hack-Nation</span>
+          </div>
+          <div class="nav-links">
+            <a href="#">Hackathon</a>
+            <a href="#">Venture Track</a>
+            <a href="#">Partner with us</a>
+            <button class="nav-apply">Apply</button>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <canvas id="fluid-bg" class="fluid-bg-canvas" aria-hidden="true"></canvas>
+        <div id="hero-app" class="hero-react-root" aria-live="polite"></div>
+      </section>
+
+      <section class="people-strip strip-top" aria-label="Community avatars">
+        <div class="people-row row-scroll-left" aria-hidden="true">
+          <div class="people-track">
+            <img src="https://www.figma.com/api/mcp/asset/f503b2cc-26ff-4a9a-8248-8eed07de8d0a" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/c127f9d1-e43a-485d-b958-96929a20b647" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/705c052b-e311-439b-b750-e04092d771c1" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/f503b2cc-26ff-4a9a-8248-8eed07de8d0a" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/c127f9d1-e43a-485d-b958-96929a20b647" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/705c052b-e311-439b-b750-e04092d771c1" alt="" />
+          </div>
+          <div class="people-track" aria-hidden="true">
+            <img src="https://www.figma.com/api/mcp/asset/f503b2cc-26ff-4a9a-8248-8eed07de8d0a" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/c127f9d1-e43a-485d-b958-96929a20b647" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/705c052b-e311-439b-b750-e04092d771c1" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/f503b2cc-26ff-4a9a-8248-8eed07de8d0a" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/c127f9d1-e43a-485d-b958-96929a20b647" alt="" />
+            <img src="https://www.figma.com/api/mcp/asset/705c052b-e311-439b-b750-e04092d771c1" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <section class="countdown">
+        <div class="container">
+        <h1 id="countdown-value">05d:59h:30m</h1>
+        <p>Until applications close. What are you waiting for?</p>
+        <div class="cta-row">
+          <button class="pill primary">Join us</button>
+          <button class="pill">Partner with us</button>
+        </div>
+        </div>
+      </section>
+      
+      <section class="launchpad">
+        <div class="container launchpad-grid">
+          <div class="launchpad-copy">
+            <h2>
+              We are not just a hackathon, but a global <em>AI talent launchpad</em>.
+            </h2>
+            <p>
+              In today's hackathon landscape, opportunity is abundant, but momentum is rare-most platforms are short-term, local, copy-paste formats, with little incubation and continuation beyond a weekend.
+            </p>
+            <p>
+              Hack-Nation removes hidden barriers to frontier AI innovation by discovering, connecting, and incubating top global talent with world-class building resources, meaningful problems worth solving, and the right people at the right time.
+            </p>
+            <p class="bold">Ultimately, Hack-Nation empowers people to build.</p>
+          </div>
+          <div class="stat-bubble">
+            <div class="stat-network" aria-hidden="true">
+              <span class="net-line line-1"></span>
+              <span class="net-line line-2"></span>
+              <span class="net-line line-3"></span>
+              <span class="net-line line-4"></span>
+              <span class="net-dot dot-1"></span>
+              <span class="net-dot dot-2"></span>
+              <span class="net-dot dot-3"></span>
+              <span class="net-dot dot-4"></span>
+              <span class="net-dot dot-5"></span>
+            </div>
+            <div class="stat-inner">
+              <div id="global-builders-value" class="value" data-target="1700">1.7k+</div>
+              <div class="label">Global Builders</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs container">
+        <h2>This is how we work.</h2>
+        <div class="program-visuals" aria-hidden="true">
+          <article class="program-visual visual-apply">
+            <div class="visual-greeting">
+              Hey<br />안녕<br />おはよう<br />Γειά σου<br />Cześć
+            </div>
+            <span class="visual-dot"></span>
+          </article>
+          <article class="program-visual visual-hackathon">
+            <span class="visual-number">01</span>
+            <img src="https://www.figma.com/api/mcp/asset/e50bb031-7b6d-4003-a1c9-dfe31ce3af65" alt="" />
+          </article>
+          <article class="program-visual visual-venture">
+            <span class="visual-number">02</span>
+            <img src="https://www.figma.com/api/mcp/asset/042e1ce1-af86-47db-963f-56d18016ae04" alt="" />
+          </article>
+          <article class="program-visual visual-investors">
+            <span class="visual-number">03</span>
+            <img src="https://www.figma.com/api/mcp/asset/a8468343-bd1e-45e0-9447-d4bd0637ead3" alt="" />
+          </article>
+        </div>
+        <div class="program-copy-grid">
+          <article class="program-copy">
+            <h3>Apply and join</h3>
+            <p>Are you a builder, dreaming of building something big, but needing API credits, mentorship, top talents, $? Apply and join our global network.</p>
+          </article>
+          <article class="program-copy">
+            <h3>Hackathon</h3>
+            <p>Join 1.7k+ builders in large-scale AI hackathons. Build, iterate, and ship real products in 48 hours with world-class mentors and resources.</p>
+          </article>
+          <article class="program-copy">
+            <h3>Venture Labs</h3>
+            <p>Continue beyond the weekend. Get matched with resources, advisors, and infrastructure to transform your hackathon project into a real venture.</p>
+          </article>
+          <article class="program-copy">
+            <h3>For Investors</h3>
+            <p>Connect with world-class AI talent, and scout the next unicorn to incubate them into fundable start-ups.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="program-details container">
+        <div class="program-stack">
+          <div class="program-slide">
+            <header class="program-detail-head">
+              <h3>01 <em>Hackathon</em></h3>
+              <p>Apply and get accepted.</p>
+            </header>
+            <article class="program-detail-card hackathon-detail">
+              <div class="program-feature-dark">
+                <div>
+                  <h4>Sign up for our 5th global AI hackathon</h4>
+                  <p>Are you a builder, dreaming of building something big, but needing API credits, mentorship, top talents, $? Apply and join our global network.</p>
+                  <p class="mono">April 25-26, 2026</p>
+                </div>
+                <div class="program-feature-center">
+                  <img src="https://www.figma.com/api/mcp/asset/290e5a4b-c7b0-4a7c-b3ff-7527297f754b" alt="" />
+                  <p class="mono">Location: Hybrid + Hubs</p>
+                </div>
+                <div class="program-feature-right">
+                  <span class="arrow">↗</span>
+                  <p class="mono">05d:59h:30m</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="program-slide">
+            <p class="program-step-label align-right">Join our hackathon.</p>
+            <article class="program-detail-card">
+              <div class="program-info-grid">
+                <article class="program-info-card"><p class="program-mini-title">01</p><img src="https://www.figma.com/api/mcp/asset/fdf8d3f0-1cdd-47e8-a37b-07333bd70a12" alt="" /><h5>Big competition awards</h5><p>Win $30k+ in API credits and cash. Get access to $150k+ API credits.</p></article>
+                <article class="program-info-card"><p class="program-mini-title">02</p><img src="https://www.figma.com/api/mcp/asset/45c29b0d-f19f-4b88-aa9d-f4f8b6b7a0bb" alt="" /><h5>Tackle real problems in AI</h5><p>Presented by top companies like OpenAI, not another mock problem.</p></article>
+                <article class="program-info-card"><p class="program-mini-title">03</p><img src="https://www.figma.com/api/mcp/asset/b419ac51-f08b-40ee-82e2-cc6ee3df6918" alt="" /><h5>Join a global community</h5><p>Meet 2,000+ AI-driven builders from 60+ countries - Find your team!</p></article>
+                <article class="program-info-card"><p class="program-mini-title">04</p><img src="https://www.figma.com/api/mcp/asset/5ed4b2bf-ec6d-46a3-b4b8-bbdbdabebc3e" alt="" /><h5>Hack with top builders</h5><p>Hack, learn and launch with builders from MIT, Stanford, TUM and more.</p></article>
+              </div>
+              <div class="program-info-partners" aria-hidden="true">
+                <img src="https://www.figma.com/api/mcp/asset/58d91476-254a-47d9-ad0b-f30fc122b163" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/9c72bd88-a726-4aba-a50a-04c4ea128387" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/97719806-0ab5-4c45-a0e8-f0bbb2a2ba76" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/58d91476-254a-47d9-ad0b-f30fc122b163" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/9c72bd88-a726-4aba-a50a-04c4ea128387" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/97719806-0ab5-4c45-a0e8-f0bbb2a2ba76" alt="" />
+              </div>
+            </article>
+          </div>
+
+          <div class="program-slide">
+            <p class="program-step-label align-right">Select your challenge.</p>
+            <article class="program-detail-card split-card">
+              <div class="split-left">
+                <p class="split-kicker">Challenges from the 4th global AI hackathon:</p>
+                <div class="split-avatars">
+                  <div><img src="https://www.figma.com/api/mcp/asset/9ed85a87-fdb6-44d1-82bb-8ca75f03bccd" alt="" /><p>MedTech</p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/134dff7a-bebf-4887-b41e-8337026f8a34" alt="" /><p>Physical AI</p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/52c13767-d864-43f7-8c11-2b879fb568aa" alt="" /><p>Agentic AI</p></div>
+                </div>
+              </div>
+              <div class="split-right">
+                <h4>You don’t need an idea</h4>
+                <p>We'll present you with exciting challenges to choose from. Our challenges come from our partners and investors who want to build something impactful with you.</p>
+                <button class="partner-pill dark-pill">View past challenges ↗</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="program-slide">
+            <p class="program-step-label align-right">Get 1st class mentors &amp; network.</p>
+            <article class="program-detail-card split-card">
+              <div class="split-left">
+                <p class="split-kicker">Meet your mentors for the 5th global hackathon:</p>
+                <div class="split-avatars">
+                  <div><img src="https://www.figma.com/api/mcp/asset/6dab0025-2bf7-4790-ae43-617937718376" alt="" /><p>Joshua M.<br /><span>Founder @Mercura</span></p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/97693bfe-3536-4c42-a479-09eef51eb69e" alt="" /><p>Eli S.<br /><span>CTO @Uizard</span></p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/8411a360-2c38-4a1d-8410-bd420438172a" alt="" /><p>Carlos T.<br /><span>AI Engineer @NVIDIA</span></p></div>
+                </div>
+              </div>
+              <div class="split-right">
+                <h4>We’ll help you succeed</h4>
+                <p>Get hands-on help from on-demand world-class mentors who have shipped AI products and built companies from zero to scale to level up your project.</p>
+                <button class="partner-pill dark-pill">View alums and mentors ↗</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="program-slide">
+            <p class="program-step-label align-right">Finalists pitch &amp; award ceremony.</p>
+            <article class="program-detail-card split-card">
+              <div class="split-left">
+                <p class="split-kicker">Winning projects from the 4th global AI hackathon:</p>
+                <div class="split-avatars">
+                  <div><img src="https://www.figma.com/api/mcp/asset/f494c285-739c-4f93-8e19-64fe39a01414" alt="" /><p>Supernova<br /><span>Joshua M., Eli S., Carlos T.</span></p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/a2b2d947-22af-4996-b5da-5a0fa2458b06" alt="" /><p>AutoMaker<br /><span>May H., Hailey K., Arjun D., Yen A.</span></p></div>
+                  <div><img src="https://www.figma.com/api/mcp/asset/6a3da2e6-45d6-4f1c-b8aa-9e97ec59847d" alt="" /><p>NeuralNet<br /><span>Lili Y., Likitha S., Frederik C.</span></p></div>
+                </div>
+              </div>
+              <div class="split-right">
+                <h4>Get your idea out there.</h4>
+                <p>Have your project evaluated by our 170+ people jury team (from MIT, Harvard, Stanford, and more). If you make it to the top projects, you get to pitch live to them &amp; the entire cohort.</p>
+                <button class="partner-pill dark-pill">View past projects ↗</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="program-slide">
+            <article class="program-detail-card venture-detail">
+              <header class="program-detail-head">
+                <h3>02 <em>Venture Lab</em></h3>
+                <p>Launch your venture.</p>
+              </header>
+              <div class="program-feature-dark">
+                <div>
+                  <h4>What’s next: The Venture Lab</h4>
+                  <p>Selected teams from the hackathon continue into our intense 3-month venture incubation program to turn your ambition into a real start-up. It is designed for teams ready to keep building with support and mentorship after the event.</p>
+                  <p class="collab-label">In collaboration with:</p>
+                  <div class="collab-logos">
+                    <img src="https://www.figma.com/api/mcp/asset/51b97ce0-6751-426e-87fb-430cca5b0d8c" alt="" />
+                    <img src="https://www.figma.com/api/mcp/asset/f8f582c3-2d7c-462a-8a8b-45522a49bd65" alt="" />
+                    <img src="https://www.figma.com/api/mcp/asset/5e134e6b-a3c7-4cee-b58e-122167f9ccc8" alt="" />
+                  </div>
+                </div>
+                <div class="program-feature-center">
+                  <h4>We want you to build unicorns</h4>
+                  <div class="unicorn-pair">
+                    <img src="https://www.figma.com/api/mcp/asset/5234438e-fe1f-4f10-9487-d5dfe48da150" alt="" />
+                    <img src="https://www.figma.com/api/mcp/asset/3550b1c7-9788-4399-82a9-29550b6505e5" alt="" />
+                  </div>
+                </div>
+                <div class="program-feature-right">
+                  <span class="arrow">↗</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container testimonials-inner">
+          <div class="testimonials-heading">
+            <h2>Testimonials</h2>
+            <p>Meet Ronan &amp; Daniel — past winners from MIT</p>
+          </div>
+          <div class="testimonials-video-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/e73dd7d8-fe3b-4c44-a237-2d6acdd57756" alt="Ronan and Daniel testimonial interview" />
+          </div>
+          <div class="testimonial-rows">
+            <div class="testimonial-track scroll-left">
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/62b2e0dd-9292-4458-a191-b444d416f7ac" alt="Alex Chen" />
+                <div>
+                  <p class="quote">"Hack-Nation gave me the structure, support, and momentum to turn my idea into a real product. I found my co-founder here."</p>
+                  <p class="name">Alex Chen</p>
+                  <p class="role">Founder, AI Startup</p>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/8b240531-c901-451b-a735-c2b8c1950a36" alt="Maya Patel" />
+                <div>
+                  <p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't. The incubation program helped us go to funded venture."</p>
+                  <p class="name">Maya Patel</p>
+                  <p class="role">Builder, Series A Founder</p>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/1c06ed47-a845-4977-874d-e3f2ca8b1d22" alt="Maya Patel" />
+                <div>
+                  <p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't. The incubation program helped us go to funded venture."</p>
+                  <p class="name">Maya Patel</p>
+                  <p class="role">Builder, Series A Founder</p>
+                </div>
+              </article>
+            </div>
+            <div class="testimonial-track scroll-right" aria-hidden="true">
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/62b2e0dd-9292-4458-a191-b444d416f7ac" alt="" />
+                <div>
+                  <p class="quote">"Hack-Nation gave me the structure, support, and momentum to turn my idea into a real product. I found my co-founder here."</p>
+                  <p class="name">Alex Chen</p>
+                  <p class="role">Founder, AI Startup</p>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/8b240531-c901-451b-a735-c2b8c1950a36" alt="" />
+                <div>
+                  <p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't. The incubation program helped us go to funded venture."</p>
+                  <p class="name">Maya Patel</p>
+                  <p class="role">Builder, Series A Founder</p>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <img src="https://www.figma.com/api/mcp/asset/1c06ed47-a845-4977-874d-e3f2ca8b1d22" alt="" />
+                <div>
+                  <p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't. The incubation program helped us go to funded venture."</p>
+                  <p class="name">Maya Patel</p>
+                  <p class="role">Builder, Series A Founder</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="container partners-inner">
+          <div class="partners-head">
+            <h2>Partner with us</h2>
+            <p>Join leading organizations supporting the next generation of AI builders.</p>
+          </div>
+
+          <div class="partner-card-grid">
+            <article class="partner-card">
+              <div class="partner-logos">
+                <img src="https://www.figma.com/api/mcp/asset/c7168940-bfcc-40dc-a573-4bd3c1d0caa2" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/3265df15-c698-4177-b58e-18627bc60c27" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/d2080d58-360d-4935-8771-dd7057315081" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/2f045d1d-443f-4c47-8e5a-e9b93797db24" alt="" />
+              </div>
+              <h3>01 <em>Hackathon</em></h3>
+              <p>Are you looking for talent, API adoption and innovation? Access top AI talent, sponsor challenges, and build your employer brand among ambitious builders.</p>
+              <button class="partner-pill">Become a Hackathon Sponsor</button>
+            </article>
+            <article class="partner-card">
+              <div class="partner-logos">
+                <img src="https://www.figma.com/api/mcp/asset/b233ca01-7cfa-4b8c-b20d-3b9b182ef3db" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/3265df15-c698-4177-b58e-18627bc60c27" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/d2080d58-360d-4935-8771-dd7057315081" alt="" />
+                <img src="https://www.figma.com/api/mcp/asset/2f045d1d-443f-4c47-8e5a-e9b93797db24" alt="" />
+              </div>
+              <h3>02 <em>Venture Lab</em></h3>
+              <p>Are you looking for an investment pipeline for your fund? Get early access to high-potential ventures and meet exceptional founders before they raise.</p>
+              <button class="partner-pill">Become a Venture Lab Partner</button>
+            </article>
+          </div>
+
+          <div class="partner-benefits">
+            <article><h4>Recruit top talent</h4><p>Meet AI engineers, researchers, and founders building under pressure.</p></article>
+            <article><h4>Push your API</h4><p>Put your tools in front of a global AI community across 15+ countries.</p></article>
+            <article><h4>Scout innovation</h4><p>Get early access to projects built with your APIs — real products.</p></article>
+            <article><h4>Become our LP for our early-stage fund</h4><p>Access high-potential AI ventures built by top global talent.</p></article>
+          </div>
+
+          <div class="judge-card">
+            <div>
+              <h3>03 <em>Judge &amp; Mentor</em></h3>
+              <p>Are you interested in becoming a judge or a mentor? Help out people getting started in their entrepreneurship career and enjoy projects at the frontline of AI innovation.</p>
+              <button class="partner-pill">Become a Judge &amp; Mentor</button>
+            </div>
+            <img src="https://www.figma.com/api/mcp/asset/de766d8c-75e6-43b3-a897-685f48baaf1b" alt="" />
+          </div>
+
+          <div class="mentor-row">
+            <article class="mentor-card"><img src="https://www.figma.com/api/mcp/asset/b70bcd0a-ec7f-4e84-b2da-b2706092ce12" alt="" /><div><p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't."</p><p class="name">Min Huo</p><p class="role">Judge, Series A Founder</p></div></article>
+            <article class="mentor-card"><img src="https://www.figma.com/api/mcp/asset/b32fca91-aac1-4693-83d0-db62296003da" alt="" /><div><p class="quote">"Most hackathons stop when the event ends. Hack-Nation doesn't."</p><p class="name">Amy Patel</p><p class="role">Mentor, Series A Founder</p></div></article>
+            <article class="mentor-card"><img src="https://www.figma.com/api/mcp/asset/8fa0ff0e-94d5-46b3-952c-bdbe8b2f4ab1" alt="" /><div><p class="quote">"Hack-Nation gave me momentum to turn my idea into a real venture."</p><p class="name">Victor Chen</p><p class="role">Mentor, AI Startup</p></div></article>
+          </div>
+
+          <div class="sponsor-matrix">
+            <h2>Our sponsors</h2>
+            <div class="sponsor-group one"><span></span></div><p>Platinum sponsor</p>
+            <div class="sponsor-group two"><span></span><span></span></div><p>API sponsors</p>
+            <div class="sponsor-group four"><span></span><span></span><span></span><span></span></div><p>Challenge sponsors</p>
+            <div class="sponsor-group four"><span></span><span></span><span></span><span></span></div><p>Community sponsors</p>
+            <div class="sponsor-group four"><span></span><span></span><span></span><span></span></div><p>Collaborators</p>
+            <div class="sponsor-group many"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><p>Past sponsors</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="container center">
+          <h2>Ready to build?</h2>
+          <p class="final-cta-sub">
+            You don't need permission, perfect timing, or more preparation to start. What
+            you need is the right environment.
+          </p>
+          <div class="cta-actions">
+            <button class="pill primary cta-apply">Apply for Next Cohort</button>
+            <button class="pill cta-join">Join Community</button>
+          </div>
+          <p class="final-cta-note">Applications close April 30, 2026</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <span>Hack-Nation</span>
+        <span>© 2026</span>
+        <span>hello@hacknation.ai</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./hero-main.jsx"></script>
+  </body>
+</html>
