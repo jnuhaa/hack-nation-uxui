@@ -1608,6 +1608,15 @@ body.scrolled-past-hero .nav-links a {
   gap: 10px;
   font-size: 13px;
   color: var(--muted);
+  align-items: center;
+}
+
+.footer-brand .icon-full {
+  display: block;
+  height: 28px;
+  width: auto;
+  max-width: min(127px, 100%);
+  object-fit: contain;
 }
 
 @media (max-width: 980px) {
