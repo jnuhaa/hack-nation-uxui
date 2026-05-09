@@ -55,7 +55,7 @@
             <img src="https://www.figma.com/api/mcp/asset/c127f9d1-e43a-485d-b958-96929a20b647" alt="" />
             <img src="https://www.figma.com/api/mcp/asset/705c052b-e311-439b-b750-e04092d771c1" alt="" />
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="countdown">
@@ -428,101 +428,102 @@
         </div>
       </section>
 
-      <section class="social-announcements" aria-labelledby="munich-posts-heading">
-        <div class="container">
-          <header class="social-announcements-head">
-            <h2 id="munich-posts-heading">Munich · Global AI hackathon</h2>
-            <p class="social-announcements-dek">
-              <time datetime="2026-05-26">May 26, 2026</time>
-              — Over <strong>$10,000</strong> in prize money and API credits. Use the cards below for feeds and stories.
+      <!-- Testing only: in-browser previews of social export frames (not production content) -->
+      <section class="social-posts-test" aria-label="Social post previews for testing">
+        <div class="container social-posts-test-inner">
+          <header class="social-test-head">
+            <p class="social-test-badge">Testing only</p>
+            <h2 class="social-test-title">Social export previews — Munich · May 26, 2026</h2>
+            <p class="social-test-note">
+              Static mocks for layout QA. Brand block uses <code>media/icon-full.svg</code> top-left per design.md.
             </p>
           </header>
 
-          <div class="social-posts-grid">
-            <article class="social-post social-post--light" aria-label="Light theme announcement post">
-              <div class="social-post__glow" aria-hidden="true"></div>
-              <div class="social-post__inner">
-                <div class="social-post__promo social-post__promo--top">
-                  <img
-                    class="social-post__logo"
-                    src="./media/icon-full.svg"
-                    width="127"
-                    height="33"
-                    alt="Hack-Nation"
-                  />
-                  <div class="social-post__rail" aria-hidden="true">
-                    <span>Hack-Nation</span>
-                    <span>Global AI hackathon</span>
-                    <span>Munich</span>
+          <div class="social-mocks-grid">
+            <figure class="social-mock">
+              <figcaption class="social-mock-label">LinkedIn · 1200 × 627</figcaption>
+              <div class="social-canvas social-canvas--linkedin">
+                <div class="social-canvas-bg" aria-hidden="true"></div>
+                <div class="social-promo-top">
+                  <img src="./media/icon-full.svg" alt="" class="social-logo-full" width="127" height="33" />
+                  <span class="social-promo-chips">
+                    <span>Hack-Nation</span><span>Global AI hackathon</span><span>Munich hub</span>
+                  </span>
+                </div>
+                <div class="social-mock-body social-mock-body--landscape">
+                  <div>
+                    <p class="social-kicker">Save the date</p>
+                    <p class="social-headline">Munich · May 26, 2026</p>
+                    <p class="social-sub">Join us for a full day of building — prizes, mentors, and peers.</p>
+                  </div>
+                  <div class="social-prize-block">
+                    <p class="social-prize-value">$10K+</p>
+                    <p class="social-prize-detail">prize pool &amp; API credits</p>
                   </div>
                 </div>
-
-                <div class="social-post__body">
-                  <p class="social-post__eyebrow">Save the date</p>
-                  <p class="social-post__city">Munich</p>
-                  <p class="social-post__date">
-                    <time datetime="2026-05-26">Tuesday, May 26, 2026</time>
-                  </p>
-                  <p class="social-post__prize">$10K+ in prizes &amp; API credits</p>
-                  <div class="social-post__visual-row">
-                    <img
-                      class="social-post__avatar"
-                      src="./media/community/Community1.jpg"
-                      width="120"
-                      height="120"
-                      alt=""
-                    />
-                    <p class="social-post__detail">
-                      We’re bringing the Hack-Nation format to Bavaria — real challenges, partner APIs, and a community of builders. Apply on
-                      <strong>hack-nation.ai</strong>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="social-post__promo social-post__promo--bottom">
-                  <span>Are you a builder?</span>
-                  <span>Apply at hack-nation.ai</span>
-                </div>
+                <p class="social-promo-bottom">
+                  <span>Builders wanted</span><span>Apply at hack-nation.ai</span>
+                </p>
               </div>
-            </article>
+            </figure>
 
-            <article class="social-post social-post--dark" aria-label="Dark theme announcement post">
-              <div class="social-post__glow social-post__glow--dark" aria-hidden="true"></div>
-              <div class="social-post__inner">
-                <div class="social-post__promo social-post__promo--top">
-                  <img
-                    class="social-post__logo social-post__logo--invert"
-                    src="./media/icon-full.svg"
-                    width="127"
-                    height="33"
-                    alt="Hack-Nation"
-                  />
-                  <div class="social-post__rail social-post__rail--light" aria-hidden="true">
-                    <span>Hack-Nation</span>
-                    <span>Global AI hackathon</span>
-                    <span>Munich · May 26</span>
-                  </div>
+            <figure class="social-mock">
+              <figcaption class="social-mock-label">Instagram feed · 1080 × 1080</figcaption>
+              <div class="social-canvas social-canvas--ig-square">
+                <div class="social-canvas-bg" aria-hidden="true"></div>
+                <div class="social-promo-top">
+                  <img src="./media/icon-full.svg" alt="" class="social-logo-full" width="127" height="33" />
+                  <span class="social-promo-chips social-promo-chips--stack">
+                    <span>Hack-Nation · Munich</span>
+                  </span>
                 </div>
-
-                <div class="social-post__body social-post__body--center">
-                  <p class="social-post__hook">Prize pool</p>
-                  <p class="social-post__big-stat">$10K+</p>
-                  <p class="social-post__substat">cash &amp; API credits</p>
-                  <p class="social-post__city-line">
-                    <span class="social-post__city-serif">Munich</span>
-                  </p>
-                  <p class="social-post__date-muted">
-                    <time datetime="2026-05-26">May 26, 2026</time>
-                  </p>
-                  <p class="social-post__tagline">Build the future of AI — one weekend, one city, global reach.</p>
-                </div>
-
-                <div class="social-post__promo social-post__promo--bottom social-post__promo--bottom-dark">
-                  <span>Passionate about AI?</span>
+                <p class="social-headline social-headline--center">Hackathon in Munich</p>
+                <p class="social-date-badge">May 26, 2026</p>
+                <p class="social-prize-line"><strong>$10K+</strong> prizes &amp; API credits</p>
+                <p class="social-promo-bottom social-promo-bottom--compact">
                   <span>hack-nation.ai</span>
-                </div>
+                </p>
               </div>
-            </article>
+            </figure>
+
+            <figure class="social-mock">
+              <figcaption class="social-mock-label">Instagram portrait · 1080 × 1350</figcaption>
+              <div class="social-canvas social-canvas--ig-portrait">
+                <div class="social-canvas-bg" aria-hidden="true"></div>
+                <div class="social-promo-top">
+                  <img src="./media/icon-full.svg" alt="" class="social-logo-full" width="127" height="33" />
+                </div>
+                <p class="social-kicker">Hack-Nation</p>
+                <p class="social-headline">Munich hackathon</p>
+                <p class="social-date-badge">Tuesday · May 26, 2026</p>
+                <div class="social-prize-card">
+                  <p class="social-prize-value">$10K+</p>
+                  <p class="social-prize-detail">cash prizes &amp; partner API credits</p>
+                </div>
+                <p class="social-tagline">Build with top mentors &amp; founders.</p>
+                <p class="social-promo-bottom">
+                  <span>Apply now</span><span>hack-nation.ai</span>
+                </p>
+              </div>
+            </figure>
+
+            <figure class="social-mock">
+              <figcaption class="social-mock-label">Instagram Story · 1080 × 1920</figcaption>
+              <div class="social-canvas social-canvas--ig-story">
+                <div class="social-canvas-bg social-canvas-bg--story" aria-hidden="true"></div>
+                <div class="social-promo-top social-promo-top--story">
+                  <img src="./media/icon-full.svg" alt="" class="social-logo-full social-logo-full--invert" width="127" height="33" />
+                </div>
+                <div class="social-story-center">
+                  <p class="social-story-city">Munich</p>
+                  <p class="social-story-date">May 26 · 2026</p>
+                  <p class="social-story-prize"><span>$10K+</span><small>prizes &amp; API credits</small></p>
+                </div>
+                <p class="social-promo-bottom social-promo-bottom--story">
+                  <span>Swipe up · hack-nation.ai</span>
+                </p>
+              </div>
+            </figure>
           </div>
         </div>
       </section>

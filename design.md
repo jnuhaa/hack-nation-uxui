@@ -232,3 +232,21 @@ Preserve **generous margins**; promo rails align to ~**77–88px** horizontal in
 6. **Proof**: Before publishing, compare against the nearest sibling frame in `Posts` (same archetype) for margins, type sizes, and blend modes.
 7. **Website**: Diff against Figma **`64:592`** for section order, **24px** card radius, **50px** hero CTAs vs **~67px** marketing CTA, **`#1900F7`** primary fill, and Experience/CTA gradients built from **`rgba(143,130,255,…)`** + **`rgba(140,255,249,…)`** (+ pink stop on the closing band).
 8. **Files**: New backgrounds → **`media/backgrounds/`**; new people shots → **`media/community/`**; social header logo → **`media/icon-full.svg`** (top-left); navbar / compact UI → **`media/icon-brandmark.svg`**.
+
+## 10) Social platform frame sizes (reference)
+
+Use these **pixel dimensions** when exporting raster or setting frames in Figma. Platforms change specs occasionally — verify in each channel’s help center before a major launch.
+
+| Platform | Typical use | Width × height (px) | Aspect ratio | Notes |
+| --- | --- | --- | --- | --- |
+| **LinkedIn** | Feed / link share image | **1200 × 627** | ~1.91:1 | Landscape; safe zone for UI varies — keep critical copy centered |
+| **LinkedIn** | Square post (optional) | **1080 × 1080** | 1:1 | Useful when matching IG square assets |
+| **Instagram** | Feed square | **1080 × 1080** | 1:1 | Classic feed tile |
+| **Instagram** | Feed portrait | **1080 × 1350** | 4:5 | Maximum vertical height in feed |
+| **Instagram** | Story / Reels vertical | **1080 × 1920** | 9:16 | Full-screen vertical; reserve top/bottom for UI |
+| **Facebook** | Feed / link preview | **1200 × 630** | ~1.91:1 | Often aligned with LinkedIn landscape masters |
+| **X (Twitter)** | Post image | **1200 × 675** (or **1600 × 900**) | 16:9 | Widescreen; 5 MB limit on images applies |
+
+**Workflow:** Design at **1080** width for Instagram-native work, and maintain a separate **1200 × 627** master for LinkedIn/Facebook landscape so text isn’t clipped when cropping between ratios.
+
+**Repo testing:** The marketing site includes a non-production **“Social export previews”** block (scroll below the final CTA) with in-browser mocks sized to these ratios for quick QA — remove or gate when shipping production builds if desired.
