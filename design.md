@@ -248,5 +248,3 @@ Use these **pixel dimensions** when exporting raster or setting frames in Figma.
 | **X (Twitter)** | Post image | **1200 × 675** (or **1600 × 900**) | 16:9 | Widescreen; 5 MB limit on images applies |
 
 **Workflow:** Design at **1080** width for Instagram-native work, and maintain a separate **1200 × 627** master for LinkedIn/Facebook landscape so text isn’t clipped when cropping between ratios.
-
-**Repo testing:** The marketing site includes a non-production **“Social export previews”** block (scroll below the final CTA) with in-browser mocks sized to these ratios for quick QA — remove or gate when shipping production builds if desired.
