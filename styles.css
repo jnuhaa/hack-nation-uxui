@@ -200,7 +200,7 @@ body {
   color: #FFFDFE;
 }
 
-.nav-brand img {
+.nav-brand .icon-brandmark {
   width: 26px;
   height: 29px;
   object-fit: contain;
@@ -2133,13 +2133,13 @@ body.scrolled-past-hero .nav-links a {
   margin-bottom: 24px;
 }
 
-.social-logo-full {
+.icon-full {
   height: auto;
   width: clamp(96px, 28cqw, 127px);
   flex-shrink: 0;
 }
 
-.social-logo-full--invert {
+.icon-full--invert {
   filter: invert(1) brightness(1.05);
 }
 
