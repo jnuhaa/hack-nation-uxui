@@ -143,7 +143,7 @@ export function initFluidBackground() {
     }
 
     vec3 palette(float t) {
-      // Palette sampled from hero-bg image:
+      // Palette sampled from media/backgrounds/hero-bg.png:
       // deep navy, indigo, violet, cyan edge, warm amber fringe.
       vec3 c1 = vec3(0.03, 0.04, 0.09);
       vec3 c2 = vec3(0.14, 0.22, 0.43);

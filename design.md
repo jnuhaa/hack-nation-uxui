@@ -11,6 +11,17 @@ This document records the design system sourced from Figma and reflected in the 
 
 Example Post URLs (same file key): Meet Individual `1:5` / `1:30`; Meet Our Speakers `1:51`; Meet Our Sponsors `1:82`; Winner Announcement `1:110`; I Have Been Selected `1:246` / `1:591`; Prize Announcement light/dark `1:958`–`1:1079`; Hackathon Announcement variants `1:939`–`1:1119`; Hub / All Hubs `1:1137`–`1:1209`.
 
+## Media assets (repository)
+
+Keep raster and logo files predictable under `media/`:
+
+| Location | Purpose |
+| --- | --- |
+| **`media/backgrounds/`** | Background plates and reference imagery for the site or composites (e.g. **`hero-bg.png`**, used as the shader palette reference). Add new background PNG/JPEG/WebP files here only — not loose in `media/`. |
+| **`media/community/`** | People photography: avatars, crowd strips, portraits for layouts. Source and maintain photo assets here. |
+| **`media/icon-brandmark.svg`** | Compact mark only (navbar, small glyph placements). Current site nav uses this path. |
+| **`media/icon-full.svg`** | Brandmark + **Hack-Nation** wordmark. **Social / paid posts:** always place this asset at the **top-left** of the frame (the `Promo_Top` logo slot in Figma); scale to fit the template’s logo bounds (~54×58px in reference frames). Do not substitute the brandmark-only SVG for that slot unless the template explicitly calls for mark-only. |
+
 ## 1) Core Tokens (from Figma variable defs)
 
 ### Color Tokens
@@ -103,7 +114,7 @@ These reusable primitives are used across sections:
 - **Card** (`.card`): bordered content card with soft shadow — **24px** radius matches Programs / testimonials / partner slabs
 - **Cities Row** (`.cities`): mono caption strip used in hero and countdown (**20px** Space Mono, full-width justify-between)
 - **Stat Bubble** (`.stat-bubble`): circular radial-gradient stat highlight (**514px** diameter treatment in Experience section)
-- **Navigation**: centered floating bar with logo + section anchors + Apply — see **Website** typography for chrome colors and blend behavior
+- **Navigation**: centered floating bar with **`media/icon-brandmark.svg`** + section anchors + Apply — see **Website** typography for chrome colors and blend behavior
 
 ## 5) Section System
 
@@ -175,7 +186,7 @@ These patterns repeat across frames in `Posts` (`NFtqlNAPNcrbxeFSS3GYd4`). Use t
 
 Most templates share a backdrop composed of:
 
-1. **`IMG`** — wide photographic gradient (orange / teal family), often ~50% opacity.
+1. **`IMG`** — wide photographic gradient (orange / teal family), often ~50% opacity. When authoring from repo assets, start from plates in **`media/backgrounds/`** where applicable.
 2. **Radial wash** — SVG overlay (light posts: luminosity blend; dark: stronger burn toward onyx).
 3. **`Effect`** — two large blurred ellipses with **color-dodge** (light) or **hue** (dark) at ~50% opacity for spectral highlights.
 4. **`Sphere`** — wireframe globe asset, partially off-canvas (top or bottom bleed) for tech/network motif.
@@ -184,12 +195,12 @@ Preserve **generous margins**; promo rails align to ~**77–88px** horizontal in
 
 ### Named bands (Figma layer names)
 
-- **`Promo_Top`** — logo vector (~54×58) + three labels: “Hack-Nation”, “Global AI hackathon”, “In collaboration with MIT Sloan Club”.
+- **`Promo_Top`** — **`media/icon-full.svg`** top-left (~54×58 target bounds) + three labels: “Hack-Nation”, “Global AI hackathon”, “In collaboration with MIT Sloan Club”.
 - **`Promo_Bottom`** — recruitment CTA split (either three phrases or two merged lines). Microcopy varies per template but typography stays Geist 20px / -1% tracking.
 
 ### Content archetypes in inventory
 
-- **Spotlight / alum** — circular photo (~563px), sphere graphic, asymmetric headline (“Meet …”).
+- **Spotlight / alum** — circular photo (~563px) from **`media/community/`** when using repo photography; sphere graphic; asymmetric headline (“Meet …”).
 - **Speakers / sponsors** — serif section title + grid or staggered layout; sponsors may use logo grid **250px** column width.
 - **Winners** — tri-column podium; challenge logo strip; ElevenLabs-style sponsor lockup where relevant.
 - **Prize / hype** — “Did you know?” + large prize line + supporting paragraph; optional circular “people” cutouts.
@@ -220,3 +231,4 @@ Preserve **generous margins**; promo rails align to ~**77–88px** horizontal in
 5. **Variants**: Export **light + dark** pairs where the file already branches — same grid, swapped fills and text tokens.
 6. **Proof**: Before publishing, compare against the nearest sibling frame in `Posts` (same archetype) for margins, type sizes, and blend modes.
 7. **Website**: Diff against Figma **`64:592`** for section order, **24px** card radius, **50px** hero CTAs vs **~67px** marketing CTA, **`#1900F7`** primary fill, and Experience/CTA gradients built from **`rgba(143,130,255,…)`** + **`rgba(140,255,249,…)`** (+ pink stop on the closing band).
+8. **Files**: New backgrounds → **`media/backgrounds/`**; new people shots → **`media/community/`**; social header logo → **`media/icon-full.svg`** (top-left); navbar / compact UI → **`media/icon-brandmark.svg`**.
